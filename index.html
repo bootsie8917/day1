@@ -4,6 +4,8 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
@@ -17,23 +19,34 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+
+    <ul class="nav nav-pills">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+    </ul>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <h1>Pick A Random</h2>
+        <h2>WINACAR</h2>
 
-        <input name="value_to_add" placeholder="Type new item here">
+        <input name="value_to_add" placeholder="ENTER NAME TO WIN!">
 
         <div class="section left">
-            <h2>Items</h2>
+            <h2>WINNER!!!!</h2>
             <ul>
             </ul>
         </div>
 
         <div class="section right">
-            <button type="button" id="randomize">Randomize</button>
+            <button type="button" id="randomize">GOOD LUCK!</button>
             <div id="selected-random"></div>
+        </div>
+        <div>
+            <ul id="cars">
+
+            </ul>
         </div>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -41,5 +54,7 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/random.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
     </body>
 </html>

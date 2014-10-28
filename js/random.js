@@ -11,12 +11,27 @@ $(function(){
       }
     }
   });
+    var cars = [
+        'Mercedes-Benz SL65 AMG Black Series','Audi A8 L W12',
+        'Mercedes-Benz S65 AMG', 'Chevrolet Corvette ZR1',
+        'Mercedes-Benz CL65 AMG	' ,'Porsche Cayenne Turbo S',
+        'Audi R8', 'BMW M6 Convertible','89 Honda Accord',
+        'Porsche 911 Convertible', 'Mercedes-Benz CLS63 AMG',
+        'AMC Pacer', 'Ford Pinto', 'Oldsmobile Tornado',
+        'GOE Storm', 'Pontiac Aztec','Bugatti'
+    ];
 
   $("button#randomize").on("click", function(){
-    var itemList = $("li");
-    var randomIndex = Math.floor(Math.random() * itemList.length);
-    var randomItem = itemList[randomIndex];
-    $("div#selected-random").text($(randomItem).text());
+    var randomIndex = Math.floor(Math.random() * cars.length);
+    var randomItem = cars[randomIndex];
+    $("div#selected-random").text(randomItem)
+
+
   });
+
+    $("div#selected-random").on('submit', function(){
+
+        }
+    )
 
 });
