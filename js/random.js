@@ -7,6 +7,7 @@ $(function(){
       if (newItem !== "") {
         $("ul").append($("<li>").text(newItem));
         $this.val("");
+        $("button#randomize").show();
       }
     }
   });

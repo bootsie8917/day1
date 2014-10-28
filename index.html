@@ -23,15 +23,17 @@
 
         <h1>Pick A Random</h2>
 
-        <input name="value_to_add">
+        <input name="value_to_add" placeholder="Type new item here">
 
-        <h2>Items</h2>
-        <ul>
-        </ul>
-        <button type="button" id="randomize">Randomize</button>
+        <div class="section left">
+            <h2>Items</h2>
+            <ul>
+            </ul>
+        </div>
 
-        <div id="selected-random">
-
+        <div class="section right">
+            <button type="button" id="randomize">Randomize</button>
+            <div id="selected-random"></div>
         </div>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

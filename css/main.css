@@ -302,3 +302,41 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+
+
+body {
+  padding: 2em;
+}
+
+input {
+  width: 80%;
+}
+
+button#randomize {
+  display: none;
+}
+
+div.section {
+  width: 40%;
+  float: left;
+  border: thin solid #eee;
+  margin: 1em;
+  padding: 1em;
+}
+
+div#selected-random {
+  font-size: 4em;
+  margin-top: 1em;
+  color: rgb(148, 8, 8);
+}
+
+@media only screen and (max-width: 400px) {
+    div.section {
+        border: none;
+    }
+    div#selected-random {
+        font-size: 2em;
+    }
+}
+
