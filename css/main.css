@@ -310,11 +310,7 @@ body {
 }
 
 input {
-  width: 80%;
-}
-
-button#randomize {
-  display: none;
+    width: 80%;
 }
 
 div.section {
@@ -326,7 +322,7 @@ div.section {
 }
 
 div#selected-random {
-  font-size: 4em;
+  font-size: 1em;
   margin-top: 1em;
   color: rgb(148, 8, 8);
 }
@@ -337,6 +333,9 @@ div#selected-random {
     }
     div#selected-random {
         font-size: 2em;
+    }
+    ul#names {
+
     }
 }
 

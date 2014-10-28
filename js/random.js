@@ -7,7 +7,6 @@ $(function(){
       if (newItem !== "") {
         $("ul").append($("<li>").text(newItem));
         $this.val("");
-        $("button#randomize").show();
       }
     }
   });
@@ -21,17 +20,19 @@ $(function(){
         'GOE Storm', 'Pontiac Aztec','Bugatti'
     ];
 
-  $("button#randomize").on("click", function(){
-    var randomIndex = Math.floor(Math.random() * cars.length);
-    var randomItem = cars[randomIndex];
-    $("div#selected-random").text(randomItem)
+    var winners = [
+       'The Original Ryan', 'The Other Ryan', 'Todd',
+        'A.J. Funk', 'SanDeep', 'Aziz', 'Samer', 'Richard',
+        'Charles', 'Ben', 'Nick', 'Charlie', 'David Trinn',
+        'Phillip', 'Bobby',
+    ];
 
+  $("button#getrandom").on("click", function(){
+    var randomIndexCar = Math.floor(Math.random() * cars.length);
+    var randomCar = cars[randomIndexCar];
+    var randomIndexWinner = Math.floor(Math.random() * winners.length);
+    var randomWinner = winners[randomIndexWinner];
+    $("div#selected-random").text('Winner is ' + randomWinner + ', and he won a new ' + randomCar + '!!!!!')
 
   });
-
-    $("div#selected-random").on('submit', function(){
-
-        }
-    )
-
 });
